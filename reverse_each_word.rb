@@ -1,19 +1,16 @@
-# require 'pry'
 
 def reverse_each_word(string)
-  output=""
   array=string.split(" ")
   array.each do |word|
-    word_length=word.length
-    word_length.times do
-
-     output+= word.chars.last
-     word.slice(word_length-1)
-    # binding.pry
+    word.reverse!
     end
-    output+=" "
-  end
-  output
+    output= array.join(" ")
 end
 
-# reverse_each_word("Hello Dawg")
+def reverse_each_word(string)
+  array=string.split(" ")
+  array.collect do |word|
+    word.reverse!
+    end
+    output= array.join(" ")
+end
