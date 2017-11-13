@@ -6,8 +6,8 @@ def reverse_each_word(string)
   array.each do |word|
     word_length=word.length
     word_length.times do
-
-     output+= word.chars.last
+      counter=0
+     output+= word.chars.last-counter
      word.slice(-1)
     # binding.pry
     end
