@@ -7,7 +7,7 @@ def reverse_each_word(string)
     word_length=word.length
     word_length.times do
       counter=0
-     output+= word.chars.last-counter
+     output+= word.chars.last
      
     # binding.pry
     end
